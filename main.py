@@ -37,6 +37,7 @@ def go(config: DictConfig):
 
         if "download" in active_steps:
             # Download file and load in W&B
+            # Equivalent to running the command line mlflow run stuff
             _ = mlflow.run(
                 # URI can be a local path or the URL to a git repository
                 f"{config['main']['components_repository']}/get_data", 
