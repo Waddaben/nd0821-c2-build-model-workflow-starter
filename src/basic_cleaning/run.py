@@ -31,6 +31,10 @@ def go(args):
     logging.info('Fix last review string fromat to correct date format')
     df['last_review'] = pd.to_datetime(df['last_review'])
 
+    logger.info('Removing listings outside of NY boundaries') 
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx].copy()
+
     # Save cleaned data
     df.to_csv("clean_sample.csv", index=False)
 
