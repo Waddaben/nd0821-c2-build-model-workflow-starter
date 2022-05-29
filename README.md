@@ -10,6 +10,11 @@ In this project you will build such a pipeline.
 https://wandb.ai/wadda/nyc_airbnb/overview
 ```
 
+## Link to github repository
+```
+git clone https://github.com/Waddaben/nd0821-c2-build-model-workflow-starter.git
+```
+
 ## Table of contents
 
 - [Introduction](#build-an-ML-Pipeline-for-Short-Term-Rental-Prices-in-NYC)
